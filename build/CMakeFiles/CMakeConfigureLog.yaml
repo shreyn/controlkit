@@ -1568,3 +1568,161 @@ events:
         - "/Network/Library/Frameworks"
         - "/System/Library/Frameworks"
 ...
+
+---
+events:
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:12 (find_package)"
+    name: "osqp"
+    configs:
+      -
+        filename: "osqp.cps"
+        kind: "cps"
+      -
+        filename: "osqpConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "osqp-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "osqp"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/Users/shreyasn/Desktop/Projects/controlkit/build/CMakeFiles/pkgRedirects/osqpConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/shreyasn/Desktop/Projects/controlkit/build/CMakeFiles/pkgRedirects/osqp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/shreyasn/Desktop/Projects/controlkit/build/CMakeFiles/pkgRedirects/lib64/cps/osqp.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/shreyasn/Desktop/Projects/controlkit/build/CMakeFiles/pkgRedirects/lib/cps/osqp.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/shreyasn/Desktop/Projects/controlkit/build/CMakeFiles/pkgRedirects/share/cps/osqp.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/shreyasn/.local/osqpConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/shreyasn/.local/osqp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/Users/shreyasn/.local/lib64/cps/osqp.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/shreyasn/.local/lib/cps/osqp.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/Users/shreyasn/.local/share/cps/osqp.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/osqpConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/osqp-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/lib64/cps/osqp.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/lib/cps/osqp.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/share/cps/osqp.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "/opt/homebrew/lib/cmake/osqp/osqpConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/opt/homebrew/lib/cmake/osqp/osqp-config.cmake"
+      mode: "config"
+      version: "0.0.0"
+    search_context:
+      ENV{PATH}:
+        - "/Users/shreyasn/.local/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/pkg/env/global/bin"
+        - "/opt/homebrew/bin"
+        - "/Users/shreyasn/.local/bin"
+        - "/opt/homebrew/Caskroom/miniconda/base/bin"
+        - "/opt/homebrew/Caskroom/miniconda/base/condabin"
+        - "/opt/homebrew/sbin"
+        - "/Users/shreyasn/.docker/bin"
+        - "/Users/shreyasn/.lmstudio/bin"
+        - "/Users/shreyasn/.docker/bin"
+        - "/Users/shreyasn/.lmstudio/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/opt/homebrew"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+        - "/sw"
+        - "/opt/local"
+      CMAKE_SYSTEM_FRAMEWORK_PATH:
+        - "~/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/Network/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Developer/CommandLineTools/Library/Frameworks"
+        - "/Library/Frameworks"
+        - "/Network/Library/Frameworks"
+        - "/System/Library/Frameworks"
+...

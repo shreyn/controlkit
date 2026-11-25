@@ -10,6 +10,12 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Users/shreyasn/Desktop/Projects/controlkit/CMakeLists.txt"
   "CMakeFiles/4.4.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.4.5/CMakeSystem.cmake"
+  "/opt/homebrew/lib/cmake/osqp/osqp-config-version.cmake"
+  "/opt/homebrew/lib/cmake/osqp/osqp-config.cmake"
+  "/opt/homebrew/lib/cmake/osqp/osqp-targets-release.cmake"
+  "/opt/homebrew/lib/cmake/osqp/osqp-targets.cmake"
+  "/opt/homebrew/lib/cmake/osqp/osqpstatic-targets-release.cmake"
+  "/opt/homebrew/lib/cmake/osqp/osqpstatic-targets.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeCXXInformation.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
   "/opt/homebrew/share/cmake/Modules/CMakeGenericSystem.cmake"
@@ -53,4 +59,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/controlkit.dir/DependInfo.cmake"
   "CMakeFiles/ball_demo.dir/DependInfo.cmake"
+  "CMakeFiles/ball_mpc_demo.dir/DependInfo.cmake"
   )

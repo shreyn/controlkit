@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/shreyasn/Desktop/Projects/controlkit/src/integrators.cpp" "CMakeFiles/controlkit.dir/src/integrators.cpp.o" "gcc" "CMakeFiles/controlkit.dir/src/integrators.cpp.o.d"
   "/Users/shreyasn/Desktop/Projects/controlkit/src/linearize.cpp" "CMakeFiles/controlkit.dir/src/linearize.cpp.o" "gcc" "CMakeFiles/controlkit.dir/src/linearize.cpp.o.d"
   "/Users/shreyasn/Desktop/Projects/controlkit/src/lqr.cpp" "CMakeFiles/controlkit.dir/src/lqr.cpp.o" "gcc" "CMakeFiles/controlkit.dir/src/lqr.cpp.o.d"
+  "/Users/shreyasn/Desktop/Projects/controlkit/src/mpc.cpp" "CMakeFiles/controlkit.dir/src/mpc.cpp.o" "gcc" "CMakeFiles/controlkit.dir/src/mpc.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

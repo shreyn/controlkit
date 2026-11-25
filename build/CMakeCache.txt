@@ -213,6 +213,9 @@ controlkit_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 controlkit_SOURCE_DIR:STATIC=/Users/shreyasn/Desktop/Projects/controlkit
 
+//The directory containing a CMake configuration file for osqp.
+osqp_DIR:PATH=/opt/homebrew/lib/cmake/osqp
+
 
 ########################
 # INTERNAL cache entries

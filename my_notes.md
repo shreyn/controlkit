@@ -248,4 +248,4 @@ Connection to Linear programming:
 - Difference: objective is quadratic
     - this means optimum isn't at a vertex of a polyhedron
     - Simplex doesn't apply
-    
+

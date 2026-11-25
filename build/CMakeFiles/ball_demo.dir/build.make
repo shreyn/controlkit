@@ -96,6 +96,7 @@ ball_demo_EXTERNAL_OBJECTS =
 ball_demo: CMakeFiles/ball_demo.dir/apps/ball_demo.cpp.o
 ball_demo: CMakeFiles/ball_demo.dir/build.make
 ball_demo: libcontrolkit.a
+ball_demo: /opt/homebrew/lib/libosqp.dylib
 ball_demo: CMakeFiles/ball_demo.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/shreyasn/Desktop/Projects/controlkit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ball_demo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ball_demo.dir/link.txt --verbose=$(VERBOSE)

@@ -142,6 +142,19 @@ ball_demo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_demo.dir/build.make CMakeFiles/ball_demo.dir/build
 .PHONY : ball_demo/fast
 
+#=============================================================================
+# Target rules for targets named ball_mpc_demo
+
+# Build rule for target.
+ball_mpc_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ball_mpc_demo
+.PHONY : ball_mpc_demo
+
+# fast build rule for target.
+ball_mpc_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_mpc_demo.dir/build.make CMakeFiles/ball_mpc_demo.dir/build
+.PHONY : ball_mpc_demo/fast
+
 apps/ball_demo.o: apps/ball_demo.cpp.o
 .PHONY : apps/ball_demo.o
 
@@ -165,6 +178,30 @@ apps/ball_demo.s: apps/ball_demo.cpp.s
 apps/ball_demo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_demo.dir/build.make CMakeFiles/ball_demo.dir/apps/ball_demo.cpp.s
 .PHONY : apps/ball_demo.cpp.s
+
+apps/ball_mpc_demo.o: apps/ball_mpc_demo.cpp.o
+.PHONY : apps/ball_mpc_demo.o
+
+# target to build an object file
+apps/ball_mpc_demo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_mpc_demo.dir/build.make CMakeFiles/ball_mpc_demo.dir/apps/ball_mpc_demo.cpp.o
+.PHONY : apps/ball_mpc_demo.cpp.o
+
+apps/ball_mpc_demo.i: apps/ball_mpc_demo.cpp.i
+.PHONY : apps/ball_mpc_demo.i
+
+# target to preprocess a source file
+apps/ball_mpc_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_mpc_demo.dir/build.make CMakeFiles/ball_mpc_demo.dir/apps/ball_mpc_demo.cpp.i
+.PHONY : apps/ball_mpc_demo.cpp.i
+
+apps/ball_mpc_demo.s: apps/ball_mpc_demo.cpp.s
+.PHONY : apps/ball_mpc_demo.s
+
+# target to generate assembly for a file
+apps/ball_mpc_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_mpc_demo.dir/build.make CMakeFiles/ball_mpc_demo.dir/apps/ball_mpc_demo.cpp.s
+.PHONY : apps/ball_mpc_demo.cpp.s
 
 src/double_integrator.o: src/double_integrator.cpp.o
 .PHONY : src/double_integrator.o
@@ -262,6 +299,30 @@ src/lqr.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/controlkit.dir/build.make CMakeFiles/controlkit.dir/src/lqr.cpp.s
 .PHONY : src/lqr.cpp.s
 
+src/mpc.o: src/mpc.cpp.o
+.PHONY : src/mpc.o
+
+# target to build an object file
+src/mpc.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controlkit.dir/build.make CMakeFiles/controlkit.dir/src/mpc.cpp.o
+.PHONY : src/mpc.cpp.o
+
+src/mpc.i: src/mpc.cpp.i
+.PHONY : src/mpc.i
+
+# target to preprocess a source file
+src/mpc.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controlkit.dir/build.make CMakeFiles/controlkit.dir/src/mpc.cpp.i
+.PHONY : src/mpc.cpp.i
+
+src/mpc.s: src/mpc.cpp.s
+.PHONY : src/mpc.s
+
+# target to generate assembly for a file
+src/mpc.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controlkit.dir/build.make CMakeFiles/controlkit.dir/src/mpc.cpp.s
+.PHONY : src/mpc.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -271,10 +332,14 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... ball_demo"
+	@echo "... ball_mpc_demo"
 	@echo "... controlkit"
 	@echo "... apps/ball_demo.o"
 	@echo "... apps/ball_demo.i"
 	@echo "... apps/ball_demo.s"
+	@echo "... apps/ball_mpc_demo.o"
+	@echo "... apps/ball_mpc_demo.i"
+	@echo "... apps/ball_mpc_demo.s"
 	@echo "... src/double_integrator.o"
 	@echo "... src/double_integrator.i"
 	@echo "... src/double_integrator.s"
@@ -287,6 +352,9 @@ help:
 	@echo "... src/lqr.o"
 	@echo "... src/lqr.i"
 	@echo "... src/lqr.s"
+	@echo "... src/mpc.o"
+	@echo "... src/mpc.i"
+	@echo "... src/mpc.s"
 .PHONY : help
 
 

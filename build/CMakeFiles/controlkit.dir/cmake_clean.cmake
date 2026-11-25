@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/controlkit.dir/src/linearize.cpp.o.d"
   "CMakeFiles/controlkit.dir/src/lqr.cpp.o"
   "CMakeFiles/controlkit.dir/src/lqr.cpp.o.d"
+  "CMakeFiles/controlkit.dir/src/mpc.cpp.o"
+  "CMakeFiles/controlkit.dir/src/mpc.cpp.o.d"
   "libcontrolkit.a"
   "libcontrolkit.pdb"
 )

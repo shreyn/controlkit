@@ -65,11 +65,13 @@ CMAKE_BINARY_DIR = /Users/shreyasn/Desktop/Projects/controlkit/build
 # The main recursive "all" target.
 all: CMakeFiles/controlkit.dir/all
 all: CMakeFiles/ball_demo.dir/all
+all: CMakeFiles/ball_mpc_demo.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/controlkit.dir/codegen
 codegen: CMakeFiles/ball_demo.dir/codegen
+codegen: CMakeFiles/ball_mpc_demo.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -79,6 +81,7 @@ preinstall:
 # The main recursive "clean" target.
 clean: CMakeFiles/controlkit.dir/clean
 clean: CMakeFiles/ball_demo.dir/clean
+clean: CMakeFiles/ball_mpc_demo.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -88,12 +91,12 @@ clean: CMakeFiles/ball_demo.dir/clean
 CMakeFiles/controlkit.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/controlkit.dir/build.make CMakeFiles/controlkit.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/controlkit.dir/build.make CMakeFiles/controlkit.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shreyasn/Desktop/Projects/controlkit/build/CMakeFiles --progress-num=3,4,5,6,7 "Built target controlkit"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shreyasn/Desktop/Projects/controlkit/build/CMakeFiles --progress-num=5,6,7,8,9,10 "Built target controlkit"
 .PHONY : CMakeFiles/controlkit.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/controlkit.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shreyasn/Desktop/Projects/controlkit/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shreyasn/Desktop/Projects/controlkit/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/controlkit.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shreyasn/Desktop/Projects/controlkit/build/CMakeFiles 0
 .PHONY : CMakeFiles/controlkit.dir/rule
@@ -105,7 +108,7 @@ controlkit: CMakeFiles/controlkit.dir/rule
 # codegen rule for target.
 CMakeFiles/controlkit.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/controlkit.dir/build.make CMakeFiles/controlkit.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shreyasn/Desktop/Projects/controlkit/build/CMakeFiles --progress-num=3,4,5,6,7 "Finished codegen for target controlkit"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shreyasn/Desktop/Projects/controlkit/build/CMakeFiles --progress-num=5,6,7,8,9,10 "Finished codegen for target controlkit"
 .PHONY : CMakeFiles/controlkit.dir/codegen
 
 # clean rule for target.
@@ -125,7 +128,7 @@ CMakeFiles/ball_demo.dir/all: CMakeFiles/controlkit.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ball_demo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shreyasn/Desktop/Projects/controlkit/build/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shreyasn/Desktop/Projects/controlkit/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ball_demo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shreyasn/Desktop/Projects/controlkit/build/CMakeFiles 0
 .PHONY : CMakeFiles/ball_demo.dir/rule
@@ -144,6 +147,38 @@ CMakeFiles/ball_demo.dir/codegen:
 CMakeFiles/ball_demo.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_demo.dir/build.make CMakeFiles/ball_demo.dir/clean
 .PHONY : CMakeFiles/ball_demo.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/ball_mpc_demo.dir
+
+# All Build rule for target.
+CMakeFiles/ball_mpc_demo.dir/all: CMakeFiles/controlkit.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_mpc_demo.dir/build.make CMakeFiles/ball_mpc_demo.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_mpc_demo.dir/build.make CMakeFiles/ball_mpc_demo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shreyasn/Desktop/Projects/controlkit/build/CMakeFiles --progress-num=3,4 "Built target ball_mpc_demo"
+.PHONY : CMakeFiles/ball_mpc_demo.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/ball_mpc_demo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shreyasn/Desktop/Projects/controlkit/build/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ball_mpc_demo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/shreyasn/Desktop/Projects/controlkit/build/CMakeFiles 0
+.PHONY : CMakeFiles/ball_mpc_demo.dir/rule
+
+# Convenience name for target.
+ball_mpc_demo: CMakeFiles/ball_mpc_demo.dir/rule
+.PHONY : ball_mpc_demo
+
+# codegen rule for target.
+CMakeFiles/ball_mpc_demo.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_mpc_demo.dir/build.make CMakeFiles/ball_mpc_demo.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/shreyasn/Desktop/Projects/controlkit/build/CMakeFiles --progress-num=3,4 "Finished codegen for target ball_mpc_demo"
+.PHONY : CMakeFiles/ball_mpc_demo.dir/codegen
+
+# clean rule for target.
+CMakeFiles/ball_mpc_demo.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_mpc_demo.dir/build.make CMakeFiles/ball_mpc_demo.dir/clean
+.PHONY : CMakeFiles/ball_mpc_demo.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

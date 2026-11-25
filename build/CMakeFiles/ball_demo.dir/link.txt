@@ -1,1 +1,1 @@
-/usr/bin/c++ -O3 -DNDEBUG -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/ball_demo.dir/apps/ball_demo.cpp.o -o ball_demo  libcontrolkit.a
+/usr/bin/c++ -O3 -DNDEBUG -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/ball_demo.dir/apps/ball_demo.cpp.o -o ball_demo  -Wl,-rpath,/opt/homebrew/lib libcontrolkit.a /opt/homebrew/lib/libosqp.dylib
