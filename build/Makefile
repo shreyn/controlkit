@@ -129,6 +129,43 @@ controlkit/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/controlkit.dir/build.make CMakeFiles/controlkit.dir/build
 .PHONY : controlkit/fast
 
+#=============================================================================
+# Target rules for targets named ball_demo
+
+# Build rule for target.
+ball_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ball_demo
+.PHONY : ball_demo
+
+# fast build rule for target.
+ball_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_demo.dir/build.make CMakeFiles/ball_demo.dir/build
+.PHONY : ball_demo/fast
+
+apps/ball_demo.o: apps/ball_demo.cpp.o
+.PHONY : apps/ball_demo.o
+
+# target to build an object file
+apps/ball_demo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_demo.dir/build.make CMakeFiles/ball_demo.dir/apps/ball_demo.cpp.o
+.PHONY : apps/ball_demo.cpp.o
+
+apps/ball_demo.i: apps/ball_demo.cpp.i
+.PHONY : apps/ball_demo.i
+
+# target to preprocess a source file
+apps/ball_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_demo.dir/build.make CMakeFiles/ball_demo.dir/apps/ball_demo.cpp.i
+.PHONY : apps/ball_demo.cpp.i
+
+apps/ball_demo.s: apps/ball_demo.cpp.s
+.PHONY : apps/ball_demo.s
+
+# target to generate assembly for a file
+apps/ball_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ball_demo.dir/build.make CMakeFiles/ball_demo.dir/apps/ball_demo.cpp.s
+.PHONY : apps/ball_demo.cpp.s
+
 src/double_integrator.o: src/double_integrator.cpp.o
 .PHONY : src/double_integrator.o
 
@@ -153,6 +190,78 @@ src/double_integrator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/controlkit.dir/build.make CMakeFiles/controlkit.dir/src/double_integrator.cpp.s
 .PHONY : src/double_integrator.cpp.s
 
+src/integrators.o: src/integrators.cpp.o
+.PHONY : src/integrators.o
+
+# target to build an object file
+src/integrators.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controlkit.dir/build.make CMakeFiles/controlkit.dir/src/integrators.cpp.o
+.PHONY : src/integrators.cpp.o
+
+src/integrators.i: src/integrators.cpp.i
+.PHONY : src/integrators.i
+
+# target to preprocess a source file
+src/integrators.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controlkit.dir/build.make CMakeFiles/controlkit.dir/src/integrators.cpp.i
+.PHONY : src/integrators.cpp.i
+
+src/integrators.s: src/integrators.cpp.s
+.PHONY : src/integrators.s
+
+# target to generate assembly for a file
+src/integrators.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controlkit.dir/build.make CMakeFiles/controlkit.dir/src/integrators.cpp.s
+.PHONY : src/integrators.cpp.s
+
+src/linearize.o: src/linearize.cpp.o
+.PHONY : src/linearize.o
+
+# target to build an object file
+src/linearize.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controlkit.dir/build.make CMakeFiles/controlkit.dir/src/linearize.cpp.o
+.PHONY : src/linearize.cpp.o
+
+src/linearize.i: src/linearize.cpp.i
+.PHONY : src/linearize.i
+
+# target to preprocess a source file
+src/linearize.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controlkit.dir/build.make CMakeFiles/controlkit.dir/src/linearize.cpp.i
+.PHONY : src/linearize.cpp.i
+
+src/linearize.s: src/linearize.cpp.s
+.PHONY : src/linearize.s
+
+# target to generate assembly for a file
+src/linearize.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controlkit.dir/build.make CMakeFiles/controlkit.dir/src/linearize.cpp.s
+.PHONY : src/linearize.cpp.s
+
+src/lqr.o: src/lqr.cpp.o
+.PHONY : src/lqr.o
+
+# target to build an object file
+src/lqr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controlkit.dir/build.make CMakeFiles/controlkit.dir/src/lqr.cpp.o
+.PHONY : src/lqr.cpp.o
+
+src/lqr.i: src/lqr.cpp.i
+.PHONY : src/lqr.i
+
+# target to preprocess a source file
+src/lqr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controlkit.dir/build.make CMakeFiles/controlkit.dir/src/lqr.cpp.i
+.PHONY : src/lqr.cpp.i
+
+src/lqr.s: src/lqr.cpp.s
+.PHONY : src/lqr.s
+
+# target to generate assembly for a file
+src/lqr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/controlkit.dir/build.make CMakeFiles/controlkit.dir/src/lqr.cpp.s
+.PHONY : src/lqr.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -161,10 +270,23 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... ball_demo"
 	@echo "... controlkit"
+	@echo "... apps/ball_demo.o"
+	@echo "... apps/ball_demo.i"
+	@echo "... apps/ball_demo.s"
 	@echo "... src/double_integrator.o"
 	@echo "... src/double_integrator.i"
 	@echo "... src/double_integrator.s"
+	@echo "... src/integrators.o"
+	@echo "... src/integrators.i"
+	@echo "... src/integrators.s"
+	@echo "... src/linearize.o"
+	@echo "... src/linearize.i"
+	@echo "... src/linearize.s"
+	@echo "... src/lqr.o"
+	@echo "... src/lqr.i"
+	@echo "... src/lqr.s"
 .PHONY : help
 
 

@@ -86,17 +86,65 @@ CMakeFiles/controlkit.dir/src/double_integrator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/controlkit.dir/src/double_integrator.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shreyasn/Desktop/Projects/controlkit/src/double_integrator.cpp -o CMakeFiles/controlkit.dir/src/double_integrator.cpp.s
 
+CMakeFiles/controlkit.dir/src/integrators.cpp.o: CMakeFiles/controlkit.dir/flags.make
+CMakeFiles/controlkit.dir/src/integrators.cpp.o: /Users/shreyasn/Desktop/Projects/controlkit/src/integrators.cpp
+CMakeFiles/controlkit.dir/src/integrators.cpp.o: CMakeFiles/controlkit.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/shreyasn/Desktop/Projects/controlkit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/controlkit.dir/src/integrators.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/controlkit.dir/src/integrators.cpp.o -MF CMakeFiles/controlkit.dir/src/integrators.cpp.o.d -o CMakeFiles/controlkit.dir/src/integrators.cpp.o -c /Users/shreyasn/Desktop/Projects/controlkit/src/integrators.cpp
+
+CMakeFiles/controlkit.dir/src/integrators.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/controlkit.dir/src/integrators.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/shreyasn/Desktop/Projects/controlkit/src/integrators.cpp > CMakeFiles/controlkit.dir/src/integrators.cpp.i
+
+CMakeFiles/controlkit.dir/src/integrators.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/controlkit.dir/src/integrators.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shreyasn/Desktop/Projects/controlkit/src/integrators.cpp -o CMakeFiles/controlkit.dir/src/integrators.cpp.s
+
+CMakeFiles/controlkit.dir/src/linearize.cpp.o: CMakeFiles/controlkit.dir/flags.make
+CMakeFiles/controlkit.dir/src/linearize.cpp.o: /Users/shreyasn/Desktop/Projects/controlkit/src/linearize.cpp
+CMakeFiles/controlkit.dir/src/linearize.cpp.o: CMakeFiles/controlkit.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/shreyasn/Desktop/Projects/controlkit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/controlkit.dir/src/linearize.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/controlkit.dir/src/linearize.cpp.o -MF CMakeFiles/controlkit.dir/src/linearize.cpp.o.d -o CMakeFiles/controlkit.dir/src/linearize.cpp.o -c /Users/shreyasn/Desktop/Projects/controlkit/src/linearize.cpp
+
+CMakeFiles/controlkit.dir/src/linearize.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/controlkit.dir/src/linearize.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/shreyasn/Desktop/Projects/controlkit/src/linearize.cpp > CMakeFiles/controlkit.dir/src/linearize.cpp.i
+
+CMakeFiles/controlkit.dir/src/linearize.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/controlkit.dir/src/linearize.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shreyasn/Desktop/Projects/controlkit/src/linearize.cpp -o CMakeFiles/controlkit.dir/src/linearize.cpp.s
+
+CMakeFiles/controlkit.dir/src/lqr.cpp.o: CMakeFiles/controlkit.dir/flags.make
+CMakeFiles/controlkit.dir/src/lqr.cpp.o: /Users/shreyasn/Desktop/Projects/controlkit/src/lqr.cpp
+CMakeFiles/controlkit.dir/src/lqr.cpp.o: CMakeFiles/controlkit.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/shreyasn/Desktop/Projects/controlkit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/controlkit.dir/src/lqr.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/controlkit.dir/src/lqr.cpp.o -MF CMakeFiles/controlkit.dir/src/lqr.cpp.o.d -o CMakeFiles/controlkit.dir/src/lqr.cpp.o -c /Users/shreyasn/Desktop/Projects/controlkit/src/lqr.cpp
+
+CMakeFiles/controlkit.dir/src/lqr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/controlkit.dir/src/lqr.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/shreyasn/Desktop/Projects/controlkit/src/lqr.cpp > CMakeFiles/controlkit.dir/src/lqr.cpp.i
+
+CMakeFiles/controlkit.dir/src/lqr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/controlkit.dir/src/lqr.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/shreyasn/Desktop/Projects/controlkit/src/lqr.cpp -o CMakeFiles/controlkit.dir/src/lqr.cpp.s
+
 # Object files for target controlkit
 controlkit_OBJECTS = \
-"CMakeFiles/controlkit.dir/src/double_integrator.cpp.o"
+"CMakeFiles/controlkit.dir/src/double_integrator.cpp.o" \
+"CMakeFiles/controlkit.dir/src/integrators.cpp.o" \
+"CMakeFiles/controlkit.dir/src/linearize.cpp.o" \
+"CMakeFiles/controlkit.dir/src/lqr.cpp.o"
 
 # External object files for target controlkit
 controlkit_EXTERNAL_OBJECTS =
 
 libcontrolkit.a: CMakeFiles/controlkit.dir/src/double_integrator.cpp.o
+libcontrolkit.a: CMakeFiles/controlkit.dir/src/integrators.cpp.o
+libcontrolkit.a: CMakeFiles/controlkit.dir/src/linearize.cpp.o
+libcontrolkit.a: CMakeFiles/controlkit.dir/src/lqr.cpp.o
 libcontrolkit.a: CMakeFiles/controlkit.dir/build.make
 libcontrolkit.a: CMakeFiles/controlkit.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/shreyasn/Desktop/Projects/controlkit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libcontrolkit.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/shreyasn/Desktop/Projects/controlkit/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libcontrolkit.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/controlkit.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/controlkit.dir/link.txt --verbose=$(VERBOSE)
 

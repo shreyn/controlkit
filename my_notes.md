@@ -108,7 +108,7 @@ We want to linearize F (rk4_step).
 
 
 ## LQR (Linear Quadratic Regulator)
-### HIGH LEVEL:
+
 1. Robot has a state (position, velocity). There is a current state, and a goal state.
 2. Before running, we need to find K once.
  - This is done by first describing a Model
@@ -134,6 +134,21 @@ We want to linearize F (rk4_step).
     - Input: A, B, Q, R
     - Returns: matrix K, where: 
         - among all possible ways of chosing $\delta u_k$ at each tick, the rule $\delta u_k = - K \delta x_k$ gives the smallest total cost J.
+    - "Best" means best over whole future. Do we need to compare infinitely many futures?
+    - No: score each place you could be. 
+        - GPS: for each intersection, we know minutes remainign to destination. 
+        - Therefore, decision is: minutes on this road + minutes remainnig from intersection, choose the smallest
+    - **cost-to-go**: $V(\delta x):$ if i behave perfectly from this error $\delta x$ onward, my total future cost J will be this much.
+        - in LQR: $V(\delta x) = \delta x^T P \delta x$
+        - P: matrix that encodes which directions of error are expensive
+    - Pipeline: A, B, Q, R -> P -> K
+    - Errors and Costs:
+        - Error: $\delta x = x - x_{goal}$. $\delta u$ similar.
+        - Penalty now: $\delta x^T Q \delta x + \delta u^T R \delta u$. 
+        - Next error: $A \delta x + B \delta u$.
+        - V: total penalty, summed over future ticks, if i behave perfectly starting from given error
+        - Total cost of a push $C(\delta u): $$C(\delta u) = penalty now + V(next error)$$.
+
 
 3. Then we run the robot
  - each tick, read current state, compute $u_t = -K(x_t - x_{goal})$
@@ -143,3 +158,10 @@ We want to linearize F (rk4_step).
          - ***u is in some sense the acceleration (deriv of velocity)***
 
 
+## In code:
+Let $e_j$ be vector with 1 in slot j, else 0. 
+Then col j of A is:
+$$A_{\cdot j} \approx \frac{F(x + \varepsilon e_j,\, u) - F(x - \varepsilon e_j,\, u)}{2\varepsilon}, \qquad \varepsilon = 10^{-6}$$
+
+Col j of B is same, but with u nudged instead of x.
+F ix rk4_step
